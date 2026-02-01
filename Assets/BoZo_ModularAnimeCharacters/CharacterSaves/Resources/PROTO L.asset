@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88f02706172fdb54d965ff1083f25ec0, type: 3}
+  m_Name: PROTO L
+  m_EditorClassIdentifier: Assembly-CSharp::Bozo.AnimeCharacters.CharacterObject
+  icon: {fileID: 2800000, guid: cc43fdea303da7c489f9dca5ed00aba8, type: 3}
+  data:
+    characterName: PROTO L
+    bodyIDs:
+    - BodyType
+    - Chest
+    - Weight
+    - NeckThickness
+    bodyShapes:
+    - 78
+    - 6
+    - 15
+    - 91
+    faceIDs:
+    - Weight
+    - Roundness
+    - Sharpness
+    - NeckThickness
+    - UpperLashLength
+    - LowerLashLength
+    - LashThickness
+    - EyeRoundness
+    - BrowThickness
+    - BrowHeight
+    - MouthWidth
+    - EarLength
+    faceShapes:
+    - 15
+    - 2
+    - 85
+    - 91
+    - 100
+    - 44
+    - 38
+    - 46
+    - 31
+    - 0
+    - 0
+    - 0
+    bodyModsKeys:
+    - root
+    - spine_04
+    - clavicle_l
+    - lowerarm_twist_02_l
+    - shoulder_twist_l
+    - upperarm_twist_02_l
+    - head
+    - eyeRoot_l
+    - eye_l
+    - calf_twist_01_l
+    - thigh_twist_01_l
+    bodyMods:
+    - scaleValue: 1.0673044
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 1
+      position: {x: 1, y: 1, z: 1}
+      rotation: 0
+    - scaleValue: 1.0177282
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    - scaleValue: 1.2
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    - scaleValue: 0.8393381
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    - scaleValue: 1
+      scale: {x: 1, y: 1.0540562, z: 1.2486606}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    - scaleValue: 1
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    - scaleValue: 1.0078716
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 1
+      position: {x: 0.02, y: 0.02, z: 0.02}
+      rotation: 0
+    - scaleValue: 1
+      scale: {x: 1, y: 0.90027225, z: 1}
+      posValue: 0
+      position: {x: 0.00044321537, y: 0.0056511494, z: 0}
+      rotation: -3.204199
+    - scaleValue: 1
+      scale: {x: 0.95429224, y: 1.0249302, z: 0.9418266}
+      posValue: 0
+      position: {x: 0, y: 0.0002216196, z: 0}
+      rotation: 0
+    - scaleValue: 1
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    - scaleValue: 0.98263115
+      scale: {x: 1, y: 1, z: 1}
+      posValue: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: 0
+    outfitDatas:
+    - outfit: Body/Body_BasicBody
+      colors:
+      - {r: 0.9019608, g: 0.76862746, b: 0.6901961, a: 1}
+      - {r: 0.7882353, g: 0.62745106, b: 0.5686274, a: 1}
+      - {r: 0.5019608, g: 0.133333, b: 0, a: 1}
+      - {r: 1, g: 0.71893454, b: 0.71893454, a: 1}
+      - {r: 1, g: 0.6877884, b: 0.6877884, a: 1}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: Eyes/Eyes_Eyes01
+      colors:
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 0, g: 0, b: 0, a: 1}
+      - {r: 0.096057676, g: 0.4630484, b: 0.8293505, a: 1}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0, g: 0.9845986, b: 1, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: Decal/Decal_PupilCircle
+      decalColors:
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      decalScale: {x: 0.78520995, y: 1.3019404, z: 0, w: 0}
+      pattern: Pattern/Pattern_DoubleCircles
+      patternColors:
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      patternScale: {x: 1, y: 1, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: HairFront/HairFront_CurtainBangs
+      colors:
+      - {r: 0, g: 0, b: 0, a: 1}
+      - {r: 0.15481037, g: 0.15481037, b: 0.15481037, a: 1}
+      - {r: 0.16886327, g: 0.16886327, b: 0.16886327, a: 1}
+      - {r: 0.9727612, g: 1, b: 0, a: 0}
+      - {r: 0, g: 0.9845986, b: 1, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: HairBack/HairBack_YokaiMane
+      colors:
+      - {r: 0.021307552, g: 0.021307552, b: 0.021307552, a: 1}
+      - {r: 0, g: 1, b: 0, a: 0}
+      - {r: 0, g: 0, b: 1, a: 0}
+      - {r: 0.9727612, g: 1, b: 0, a: 0}
+      - {r: 0, g: 0.9845986, b: 1, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: Head/Head_Young
+      colors:
+      - {r: 0.9019608, g: 0.76862746, b: 0.6901961, a: 1}
+      - {r: 0.7882353, g: 0.62745106, b: 0.5686274, a: 1}
+      - {r: 0.5019608, g: 0.133333, b: 0, a: 1}
+      - {r: 0, g: 0, b: 0, a: 0}
+      - {r: 0.29411736, g: 0.15294087, b: 0.21960753, a: 0}
+      - {r: 0.2955971, g: 0.15151659, b: 0.21937373, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.49056596, g: 0.063248806, b: 0.11146196, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: Top/Top_HardJacket
+      colors:
+      - {r: 0.056439884, g: 0.056439884, b: 0.056439884, a: 1}
+      - {r: 0.104647435, g: 0.102190994, b: 0.102190994, a: 1}
+      - {r: 0.8679245, g: 0.6993487, b: 0.39029285, a: 1}
+      - {r: 0.08976438, g: 0.08976438, b: 0.08976438, a: 1}
+      - {r: 0.122874506, g: 0.12135, b: 0.12135, a: 1}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: Decal/Decal_BozoLogo
+      decalColors:
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 0, g: 0, b: 0, a: 1}
+      decalScale: {x: 0.53386635, y: 0.46033037, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: Bottom/Bottom_BeltedPants
+      colors:
+      - {r: 0.089764394, g: 0.089764394, b: 0.089764394, a: 1}
+      - {r: 0.09912897, g: 0.09912897, b: 0.09912897, a: 1}
+      - {r: 0, g: 0, b: 0, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 0, g: 0.9845986, b: 1, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: UpperFace/UpperFace_MedicalEyePatch
+      colors:
+      - {r: 0.19696891, g: 0.19696891, b: 0.19696891, a: 1}
+      - {r: 1, g: 1, b: 1, a: 1}
+      - {r: 0.5471698, g: 0.35175398, b: 0.2942327, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.5031445, g: 0.5031445, b: 0.5031445, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: Gloves/Hands_FingerlessGloves
+      colors:
+      - {r: 0.25786152, g: 0.25786152, b: 0.25786152, a: 1}
+      - {r: 0.16352189, g: 0.16352189, b: 0.16352189, a: 0}
+      - {r: 0, g: 0, b: 1, a: 0}
+      - {r: 0.9727612, g: 1, b: 0, a: 0}
+      - {r: 0, g: 0.9845986, b: 1, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    - outfit: Feet/Feet_AthleticMidTop
+      colors:
+      - {r: 0.13373065, g: 0.13373065, b: 0.13373065, a: 1}
+      - {r: 0.5597484, g: 0.5597484, b: 0.5597484, a: 0}
+      - {r: 0.76729554, g: 0.76729554, b: 0.76729554, a: 0}
+      - {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 0}
+      - {r: 0.11949671, g: 0.11949671, b: 0.11949671, a: 0}
+      - {r: 1, g: 0, b: 0.988061, a: 0}
+      - {r: 1, g: 1, b: 1, a: 0}
+      - {r: 0.50314444, g: 0.50314444, b: 0.50314444, a: 0}
+      - {r: 0, g: 0, b: 0, a: 0}
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    bodyData:
+      outfit: 
+      colors: []
+      decal: 
+      decalColors: []
+      decalScale: {x: 0, y: 0, z: 0, w: 0}
+      pattern: 
+      patternColors: []
+      patternScale: {x: 0, y: 0, z: 0, w: 0}
+      color: {r: 1, g: 1, b: 1, a: 1}
+      swatch: 0
+    stance: 0

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b38a9c3c475544a489cff507ab8017e2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323550
+  packageName: 'BoZo: Modular Anime Characters - Base Pack'
+  packageVersion: 1.7.4
+  assetPath: Assets/BoZo_ModularAnimeCharacters/Animations/Controllers/BodyRig.controller
+  uploadId: 853356

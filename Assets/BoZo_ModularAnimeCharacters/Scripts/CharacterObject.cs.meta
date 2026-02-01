@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 88f02706172fdb54d965ff1083f25ec0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323550
+  packageName: 'BoZo: Modular Anime Characters - Base Pack'
+  packageVersion: 1.7.4
+  assetPath: Assets/BoZo_ModularAnimeCharacters/Scripts/CharacterObject.cs
+  uploadId: 853356

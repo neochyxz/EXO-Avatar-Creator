@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b5460613c21ed8c41b9ed135d1a20b49
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323550
+  packageName: 'BoZo: Modular Anime Characters - Base Pack'
+  packageVersion: 1.7.4
+  assetPath: Assets/BoZo_ModularAnimeCharacters/Scripts/Editor/OutfitSystemEditor.cs
+  uploadId: 853356

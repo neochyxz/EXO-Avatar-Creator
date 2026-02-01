@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 729785983c930ad4eabe8415a3d0f9f0
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323550
+  packageName: 'BoZo: Modular Anime Characters - Base Pack'
+  packageVersion: 1.7.4
+  assetPath: Assets/BoZo_ModularAnimeCharacters/Prefabs/_CharacterCreator/BMAC_BodyModifierSliders.prefab
+  uploadId: 853356

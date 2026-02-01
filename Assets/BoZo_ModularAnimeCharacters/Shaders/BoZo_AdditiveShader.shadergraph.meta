@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5adf99a227299e840be8a0f86f918fff
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323550
+  packageName: 'BoZo: Modular Anime Characters - Base Pack'
+  packageVersion: 1.7.4
+  assetPath: Assets/BoZo_ModularAnimeCharacters/Shaders/BoZo_AdditiveShader.shadergraph
+  uploadId: 853356

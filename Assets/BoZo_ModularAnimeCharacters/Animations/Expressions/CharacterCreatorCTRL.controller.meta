@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f5ca31cc9a800247bab6034d012afdf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 323550
+  packageName: 'BoZo: Modular Anime Characters - Base Pack'
+  packageVersion: 1.7.4
+  assetPath: Assets/BoZo_ModularAnimeCharacters/Animations/Expressions/CharacterCreatorCTRL.controller
+  uploadId: 853356
