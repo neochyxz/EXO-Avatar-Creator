@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace Bozo.AnimeCharacters
 {
     public class OutfitFollowBlendShapes : MonoBehaviour, IOutfitExtension
@@ -14,58 +13,80 @@ namespace Bozo.AnimeCharacters
         [SerializeField] OutfitType follow;
         [SerializeField] List<Vector2> shapes = new List<Vector2>();
 
+        private bool isAlive = true;
+
         private void OnDestroy()
         {
-            if (system == null) return;
-            system.OnOutfitChanged -= OnNewSetUpHead;
-        }
+            isAlive = false;
 
-        private void Init()
-        {
+            if (system != null)
+            {
+                system.OnOutfitChanged -= OnNewSetUpHead;
+            }
 
+            mesh = null;
+            followTarget = null;
+            shapes.Clear();
         }
 
         private void OnNewSetUpHead(Outfit outfit)
         {
-            if (outfit == null) { return; }
-            if (outfit.Type != follow) { return; }
-            if (!outfit.skinnedRenderer) { return; }
+            if (!isAlive) return;
+            if (outfit == null) return;
+            if (outfit.Type != follow) return;
+            if (!outfit.skinnedRenderer) return;
+
             followTarget = outfit.skinnedRenderer;
             SetUp();
         }
 
         private void SetUp()
         {
+            if (!isAlive) return;
+
             mesh = GetComponentInChildren<SkinnedMeshRenderer>();
+
+            if (!mesh || !mesh.sharedMesh) return;
+            if (!followTarget || !followTarget.sharedMesh) return;
+            if (followTarget.sharedMesh.blendShapeCount == 0) return;
 
             var characterShapeTitle = followTarget.sharedMesh.GetBlendShapeName(0);
             var sort = characterShapeTitle.Split(".");
-            if (sort.Length > 1) { characterShapeTitle = sort[0] + "."; }
-            else { characterShapeTitle = ""; }
+            characterShapeTitle = sort.Length > 1 ? sort[0] + "." : "";
 
             shapes.Clear();
-            for (int i = 0; i < mesh.sharedMesh.blendShapeCount; i++)
+
+            var meshShared = mesh.sharedMesh;
+            var followShared = followTarget.sharedMesh;
+
+            for (int i = 0; i < meshShared.blendShapeCount; i++)
             {
-                var shapeName = mesh.sharedMesh.GetBlendShapeName(i);
+                var shapeName = meshShared.GetBlendShapeName(i);
                 sort = shapeName.Split(".");
-                if (sort.Length > 1) { shapeName = sort[1]; }
+                if (sort.Length > 1) shapeName = sort[1];
 
-                var shapeIndex = followTarget.sharedMesh.GetBlendShapeIndex(characterShapeTitle + shapeName);
-
+                int shapeIndex = followShared.GetBlendShapeIndex(characterShapeTitle + shapeName);
                 if (shapeIndex != -1)
                 {
-                    //print(characterShapeTitle + " | " + shapeName + " | " + shapeIndex);
-                    shapes.Add(new Vector2 (i,shapeIndex));
+                    shapes.Add(new Vector2(i, shapeIndex));
                 }
             }
         }
 
         private void Update()
         {
-            if (followTarget == null) return;
+            if (!isAlive) return;
+            if (!mesh || !followTarget) return;
+            if (!mesh.sharedMesh || !followTarget.sharedMesh) return;
+
             for (int i = 0; i < shapes.Count; i++)
             {
-                mesh.SetBlendShapeWeight((int)shapes[i].x, followTarget.GetBlendShapeWeight((int)shapes[i].y));
+                if (!mesh || !followTarget) return;
+
+                mesh.SetBlendShapeWeight(
+                    (int)shapes[i].x,
+                    followTarget.GetBlendShapeWeight((int)shapes[i].y)
+                );
             }
         }
 
@@ -77,32 +98,23 @@ namespace Bozo.AnimeCharacters
         public void Initalize(OutfitSystem outfitSystem, Outfit outfit)
         {
             system = outfitSystem;
-            if (system == null) return;
+            if (system == null || outfit == null) return;
+
             system.OnOutfitChanged += OnNewSetUpHead;
+
             mesh = outfit.skinnedRenderer;
+            if (!mesh) return;
 
             var followOutfit = system.GetOutfit(follow);
-            if (followOutfit == null) { return; }
-            if (followOutfit.skinnedRenderer == null) { return; }
+            if (followOutfit == null || !followOutfit.skinnedRenderer) return;
+
             followTarget = followOutfit.skinnedRenderer;
-
             SetUp();
-
         }
 
-        public void Execute(OutfitSystem outfitSystem, Outfit outfit)
-        {
+        public void Execute(OutfitSystem outfitSystem, Outfit outfit) { }
 
-        }
-
-        public object GetValue()
-        {
-            return null;
-        }
-
-        public Type GetValueType()
-        {
-            return null;
-        }
+        public object GetValue() => null;
+        public Type GetValueType() => null;
     }
 }
